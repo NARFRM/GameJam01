@@ -50,11 +50,11 @@ public class PlayerController : MonoBehaviour
          // Animación de movimiento
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            animatorPlayer.SetBool("walking", true);
+            animatorPlayer.SetBool("walk", true);
         }
         else
         {
-            animatorPlayer.SetBool("walking", false);
+            animatorPlayer.SetBool("walk", false);
         }
     }
 }

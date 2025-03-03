@@ -3,7 +3,7 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
-    private Vector3 offset = new Vector3(0.5f, 5f, -20f);
+    private Vector3 offset = new Vector3(0.5f, 7f, -17f);
     public float RotationSpeed = 200.0f;
     public float zoomSpeed = 2.0f;
     public float minZoom = 2f;
