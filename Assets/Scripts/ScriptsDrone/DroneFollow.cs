@@ -3,14 +3,14 @@ using UnityEngine;
 public class DroneFollow : MonoBehaviour
 {
     public Transform player;       // Referencia al jugador
-    public Transform pointA;      
-    public Transform pointB;      
+    public Transform pointA;
+    public Transform pointB;
     public float patrolSpeed = 2f; // Velocidad de patrulla
-    public float chaseSpeed = 4f;  // Velocidad de persecución
-    public float detectionRange = 5f; 
+    public float chaseSpeed = 4f;  // Velocidad de persecuciï¿½n
+    public float detectionRange = 5f;
 
-    private Vector3 targetPosition; // Posición a la que se mueve
-    private bool chasing = false;   // Estado de persecución
+    private Vector3 targetPosition; // Posiciï¿½n a la que se mueve
+    private bool chasing = false;   // Estado de persecuciï¿½n
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class DroneFollow : MonoBehaviour
 
         if (distanceToPlayer < detectionRange)
         {
-            // Si el jugador está cerca, lo persigue
+            // Si el jugador estï¿½ cerca, lo persigue
             chasing = true;
         }
         else if (chasing)
@@ -68,9 +68,17 @@ public class DroneFollow : MonoBehaviour
 
     Vector3 GetClosestPatrolPoint()
     {
-        // Retorna el punto de patrulla más cercano 
+        // Retorna el punto de patrulla mï¿½s cercano 
         return Vector3.Distance(transform.position, pointA.position) < Vector3.Distance(transform.position, pointB.position)
             ? pointA.position : pointB.position;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            LifeController.instance.ReduceLife(10);
+        }
     }
 }
 
