@@ -7,13 +7,7 @@ public class LaserStatic : LaserBase
         isActive = true; // Siempre encendido
     }
 
-    void Start()
-    {
-        Debug.Log("Inicia el laser");
-    }
 
-    
-
-    
+        
 
 }
