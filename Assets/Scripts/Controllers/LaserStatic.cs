@@ -7,7 +7,4 @@ public class LaserStatic : LaserBase
         isActive = true; // Siempre encendido
     }
 
-
-        
-
 }

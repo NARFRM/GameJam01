@@ -103,12 +103,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.11430519, y: 7.402031, z: 0.09902145}
-  m_Center: {x: 0.000000059604645, y: -0.94394994, z: -0.0000000018626451}
+  m_Size: {x: 1.7388811, y: 7.4020314, z: 0.20595868}
+  m_Center: {x: -0.81228834, y: -0.94394976, z: 0.10488477}
 --- !u!114 &2414495202731316565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 1389701569922164902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.520271, y: 1.1283092, z: 19.601114}
+  m_LocalPosition: {x: 209.76842, y: 0, z: 363.43674}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -444,8 +444,6 @@ GameObject:
   - component: {fileID: 7940619489986124627}
   - component: {fileID: 8984170354115229125}
   - component: {fileID: 4976923048501866198}
-  - component: {fileID: 4697602485933712748}
-  - component: {fileID: 2838153143373722075}
   m_Layer: 0
   m_Name: Laser 5
   m_TagString: Laser
@@ -521,41 +519,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4697602485933712748
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553640676114867149}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.11432286, y: 7.9810815, z: 0.04951072}
-  m_Center: {x: -0.00000011920929, y: -0.9439478, z: 0.04951072}
---- !u!114 &2838153143373722075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553640676114867149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cee81b9f4299429498d503877c2d802d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  isActive: 1
 --- !u!1 &6984957656774077903
 GameObject:
   m_ObjectHideFlags: 0

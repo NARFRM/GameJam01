@@ -199,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 3317325024471360751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.60661316, y: 1.1283092, z: 19.601112}
+  m_LocalPosition: {x: 181.45134, y: 0.6195158, z: 365.8343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -522,8 +522,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.74850535, y: 10.490766, z: 0.09911571}
-  m_Center: {x: -0.31705293, y: 0.6003723, z: -0.0000000037252903}
+  m_Size: {x: 0.86012185, y: 10.490766, z: 0.09911571}
+  m_Center: {x: -0.3728612, y: 0.6003723, z: -0.0000000037252903}
 --- !u!114 &276734686609806028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,8 +549,6 @@ GameObject:
   - component: {fileID: 6059947627405594752}
   - component: {fileID: 8731640235389309222}
   - component: {fileID: 3960367398318187556}
-  - component: {fileID: 7301293159534522524}
-  - component: {fileID: 5841916429650447368}
   m_Layer: 0
   m_Name: Laser 1
   m_TagString: Untagged
@@ -626,41 +624,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7301293159534522524
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489707076326893022}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.11441712, y: 11.069818, z: 0.09913338}
-  m_Center: {x: 0.00000011920928, y: 0.6775083, z: -0.0000000018626451}
---- !u!114 &5841916429650447368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489707076326893022}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cee81b9f4299429498d503877c2d802d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  isActive: 1
 --- !u!1 &8736058460457399158
 GameObject:
   m_ObjectHideFlags: 0
