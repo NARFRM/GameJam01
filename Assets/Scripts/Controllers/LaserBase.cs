@@ -17,7 +17,7 @@ public abstract class LaserBase : MonoBehaviour
 
         if (other.CompareTag("Player")) {
             Debug.Log("Choca con el laser");
-            GameManager.instance.ReduceLife(damage);
+            LifeController.instance.ReduceLife(damage);
         }
 
         // TODO : Implementar un canvas de damage (rojo) para mostrar el daño recibido

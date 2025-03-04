@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3317325024471360751}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.60661316, y: 1.1283092, z: 19.601112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1748894882634640942}
   - component: {fileID: 4415349037833448764}
   - component: {fileID: 6741442421182767467}
-  - component: {fileID: 1897609076013576733}
+  - component: {fileID: 276734686609806028}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -522,9 +522,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.11439945, y: 10.490766, z: 0.09911571}
-  m_Center: {x: 0.00000011920929, y: 0.6003722, z: -0.0000000018626451}
---- !u!114 &1897609076013576733
+  m_Size: {x: 0.74850535, y: 10.490766, z: 0.09911571}
+  m_Center: {x: -0.31705293, y: 0.6003723, z: -0.0000000037252903}
+--- !u!114 &276734686609806028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489707076326893022}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cee81b9f4299429498d503877c2d802d, type: 3}
   m_Name: 
