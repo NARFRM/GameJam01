@@ -9,11 +9,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;  // Componente Rigidbody de la esfera
     private Animator animatorPlayer;  // Animator del jugador
 
+    private GameManager gameManager;
+
+    private int npcDestroyed=0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.linearDamping = 5f;  // Ajuste del drag para reducir el deslizamiento
         animatorPlayer = GetComponent<Animator>();
+
+        gameManager = GameManager.instance;
     }
 
     void FixedUpdate()
@@ -50,5 +56,22 @@ public class PlayerController : MonoBehaviour
         {
             animatorPlayer.SetBool("walk", false);
         }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("npc"))
+        {
+           npcDestroyed++;
+           Debug.Log("Npc destruido: " + npcDestroyed);
+
+           if (npcDestroyed == 2)
+           {
+               Debug.Log("You win");
+               gameManager.GameOverWin(true);
+           }
+        }
+
+       
     }
 }
