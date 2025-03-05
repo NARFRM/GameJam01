@@ -77,7 +77,7 @@ public class DroneFollow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            LifeController.instance.ReduceLife(10);
+            LifeController.instance.ReduceLife(1);
         }
     }
 }

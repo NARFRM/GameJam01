@@ -23,7 +23,7 @@ public class LifeController : MonoBehaviour
     }
     void Start()
     {
-        lives = 10;
+        lives = 3;
         
     }
 
