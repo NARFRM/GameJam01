@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyDistanceToRun: 4
+  enemyDistanceToRun: 8
 --- !u!54 &5657472479807890972
 Rigidbody:
   m_ObjectHideFlags: 0

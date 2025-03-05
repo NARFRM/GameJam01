@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private GameManager gameManager;
 
-    private int npcDestroyed=0;
+    private int npcDestroyed = 0;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         rb.linearDamping = 5f;  // Ajuste del drag para reducir el deslizamiento
         animatorPlayer = GetComponent<Animator>();
 
-        gameManager = GameManager.instance;
+        gameManager = GameManager.Instance;
     }
 
     void FixedUpdate()
@@ -62,16 +62,16 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("npc"))
         {
-           npcDestroyed++;
-           Debug.Log("Npc destruido: " + npcDestroyed);
+            npcDestroyed++;
+            Debug.Log("Npc destruido: " + npcDestroyed);
 
-           if (npcDestroyed == 2)
-           {
-               Debug.Log("You win");
-               gameManager.GameOverWin(true);
-           }
+            if (npcDestroyed == 2)
+            {
+                Debug.Log("You win");
+                gameManager.GameOverWin();
+            }
         }
 
-       
+
     }
 }

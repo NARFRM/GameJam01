@@ -40,7 +40,7 @@ public class NpcController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Tripulante asesinado");
+            EnemyCounterUI.Instance.EnemyDefeated();
             Destroy(gameObject);
         }
     }

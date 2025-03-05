@@ -15,9 +15,10 @@ public abstract class LaserBase : MonoBehaviour
     protected virtual void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Player")) {
+        if (other.CompareTag("Player"))
+        {
             Debug.Log("Choca con el laser");
-            LifeController.instance.ReduceLife(damage);
+            LifeController.Instance.ReduceLife(damage);
         }
 
         // TODO : Implementar un canvas de damage (rojo) para mostrar el daño recibido
