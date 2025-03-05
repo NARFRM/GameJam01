@@ -3,12 +3,24 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
+    public static HealthUI Instance { get; private set; }
     public Image[] hearts;  // Corazones en la UI
-    public Sprite fullHeart;  // Imagen del corazón lleno
-    public Sprite emptyHeart; // Imagen del corazón vacío
+    public Sprite fullHeart;  // Imagen del corazï¿½n lleno
+    public Sprite emptyHeart; // Imagen del corazï¿½n vacï¿½o
 
     [SerializeField] private int currentHealth;  // Cantidad actual de vidas
 
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         currentHealth = hearts.Length; // Inicia con la cantidad total de corazones
@@ -25,14 +37,14 @@ public class HealthUI : MonoBehaviour
 
         if (currentHealth == 0)
         {
-            Debug.Log("¡El jugador ha muerto!");
-            // Aquí puedes agregar una animación o reiniciar la escena
+            Debug.Log("ï¿½El jugador ha muerto!");
+            // Aquï¿½ puedes agregar una animaciï¿½n o reiniciar la escena
         }
     }
 
     void UpdateHearts()
     {
-        // Recorre cada corazón y lo cambia a vacío si ha perdido vida
+        // Recorre cada corazï¿½n y lo cambia a vacï¿½o si ha perdido vida
         for (int i = 0; i < hearts.Length; i++)
         {
             hearts[i].sprite = (i < currentHealth) ? fullHeart : emptyHeart;

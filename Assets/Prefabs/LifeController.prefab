@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023247715444887791}
   - component: {fileID: 8547784193806084619}
+  - component: {fileID: 3300224494483478212}
   m_Layer: 0
   m_Name: LifeController
   m_TagString: Untagged
@@ -44,5 +45,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ce6e31f35ea6f4cb02021555df266d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 10
+  lives: 3
   didLose: 0
+--- !u!114 &3300224494483478212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4620045798646452996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f822ec8379fae4486110a794266fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: -394465455, guid: a85a9c6473f384c4fae30d2ef0007253, type: 3}
+  emptyHeart: {fileID: -1305565076, guid: a9bdc6d4f5d7bc64fa6770a202613249, type: 3}
+  currentHealth: 3

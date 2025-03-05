@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
     IEnumerator LoadFinishScene()
     {
         yield return new WaitForSeconds(1f); // Espera 1 segundo antes de recargar
-        SceneManager.LoadScene("Finish");
+        SceneManager.LoadScene("Interfaz");
     }
 
     public void GameOverWin()
