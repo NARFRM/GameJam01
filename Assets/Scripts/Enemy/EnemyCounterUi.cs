@@ -34,6 +34,6 @@ public class EnemyCounterUI : MonoBehaviour
 
     void UpdateEnemyUI()
     {
-        enemyText.text = "Enemigos restantes: " + remainingEnemies;
+        enemyText.text = "Crew members alive: " + remainingEnemies;
     }
 }
